@@ -1,0 +1,22 @@
+import java.util.*;
+class GuessingGame
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int secretNumber=18;
+int guess;
+System.out.println("Guess the secret Numbers!");
+do
+{
+System.out.println("Enter your guess");
+guess=sc.nextInt();
+if(guess!=secretNumber)
+{
+System.out.println("Try again");
+}
+}
+while(guess!=secretNumber);
+System.out.println("Congretulations ! You guessed the secret number");
+}
+}
